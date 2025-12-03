@@ -1,0 +1,5 @@
+{
+  "name": "音名训练助手 (Note Trainer)",
+  "description": "一个专为音乐学习者设计的Web应用，支持随机或顺序生成科学记号法音名，并配合人声朗读功能。适用于视唱练耳、乐理学习及反应训练。",
+  "requestFramePermissions": []
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音名训练助手</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'neo-yellow': '#ccff00', // Neon Yellow
+                        'neo-pink': '#ff90e8',
+                        'neo-blue': '#90e0ff',
+                        'neo-black': '#000000',
+                        'neo-white': '#ffffff',
+                        'neo-bg': '#f0f0f0',
+                    },
+                    fontFamily: {
+                        sans: ['"Archivo Black"', 'Impact', 'Arial Black', 'sans-serif'],
+                        mono: ['"Space Mono"', 'monospace'],
+                    },
+                    boxShadow: {
+                        'neo': '6px 6px 0px 0px #000000',
+                        'neo-hover': '10px 10px 0px 0px #000000',
+                        'neo-active': '0px 0px 0px 0px #000000',
+                    },
+                    borderWidth: {
+                        '3': '3px',
+                        '4': '4px',
+                    },
+                    borderRadius: {
+                        'base': '0.75rem', // Slightly rounded but blocky
+                    }
+                }
+            }
+        }
+    </script>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "tone": "https://aistudiocdn.com/tone@^14.7.77"
+  }
+}
+</script>
+<style>
+    /* Simple dot pattern background */
+    body {
+        background-color: #f3f4f6;
+        background-image: radial-gradient(#000 1px, transparent 1px);
+        background-size: 24px 24px;
+    }
+</style>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="text-neo-black min-h-screen antialiased flex flex-col selection:bg-neo-pink selection:text-black">
+    <div id="root" class="flex-1 flex flex-col"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
